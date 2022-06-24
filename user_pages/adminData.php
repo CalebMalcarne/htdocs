@@ -7,9 +7,6 @@ $user = $_SESSION['user'];
 $sql = "SELECT * FROM login";
 $result = $mysqli ->query($sql);
 $row = $result -> fetch_assoc();
-echo "<script> 
-document.getElementById(\"privalage\").submit();
-</script>";
 
 echo "<div class=\"container\">";
 echo "<div class=\"card shadow\">";
@@ -31,11 +28,12 @@ if ($mysqli->affected_rows > 0) {
         echo "<th>   </th>";
         echo "<th>   </th>";
         echo "<th>   </th>";
-        echo "<th>   </th>";
+        echo "<th> <a  href = \"#\">
+        <a href = \"\"><button type=\"submit\" class=\"btn btn-success btn-sm\"> Save Permissions </button></a> </th>";
         echo "<th><a  href = \"#\">
         <a href = \"\"><button type=\"submit\" class=\"btn btn-success btn-sm\"> Info </button></a></th>";
         echo "<th>
-        <form id=\"privalage\" action='' method=\"post\">
+        <form id=\"privalage\" action='../index.php' method=\"post\">
             <select name=\"zone\" id=\"role\" class=\"form-select\" required>
                 <option hidden></option>
                 <option>Employee</option>
