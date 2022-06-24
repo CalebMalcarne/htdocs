@@ -13,6 +13,6 @@ This web app is used to keep track of different employee information:
 
 
 ## current tasks
--[ ] Add employee information pages
--[ ] Add user permissions 
--[ ] Add way to change user permissions
+[ ] Add employee information pages
+[ ] Add user permissions 
+[ ] Add way to change user permissions
