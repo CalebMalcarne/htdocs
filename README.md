@@ -7,9 +7,9 @@ This web app is used to keep track of different employee information:
 ---
 ## Current development platform and other information
 
-I am using [XAMPP](https://www.apachefriends.org/) as a platfourm to develop this web app
-This application used MySQL as its database
-the pages are built with **PHP**
+-I am using [XAMPP](https://www.apachefriends.org/) as a platfourm to develop this web app
+-This application used MySQL as its database
+-the pages are built with **PHP**
 
 
 ## current tasks
