@@ -18,8 +18,8 @@
                         <img src="../imgs/Logo3.jpg" alt="Company logo" class="my-1" style="height: 2rem;">&nbsp;&nbsp;&nbsp;<h1 class="navbar-brand align-self-center display-2 mb-1">Malcarne Contracting Employee Portal</h1>
                     <div class="nav nav-pills">
                         <a href ="../user_pages/adminData.php" class="nav-link text-dark"><span class="d-none d-md-inline">Employee List&nbsp;&nbsp;</span><i class="bi bi-people-fill"></i></a>
-                        <a href="../user_pages/input_hours.php" class="nav-link text-dark"><span class="d-none d-md-inline">Add User&nbsp;&nbsp;</span><i class="bi bi-graph-up"></i></a>
-                        <a href="../user_pages/updatepass.php?err=0&sub=0" class="nav-link text-dark"><span class="d-none d-md-inline">change password&nbsp;&nbsp;</span><i class="bi bi-tools"></i></a>
+                        <a href="../user_pages/add_employee.php" class="nav-link text-dark"><span class="d-none d-md-inline">Add Employee&nbsp;&nbsp;</span><i class="bi bi-graph-up"></i></a>
+                        <a href="../user_pages/updatepass.php?err=0&sub=0" class="nav-link text-dark"><span class="d-none d-md-inline">Change Password&nbsp;&nbsp;</span><i class="bi bi-tools"></i></a>
                     </div>  
                     <a href="../index.php" class="btn btn-danger"><span class="d-none d-md-inline">Sign Out&nbsp;&nbsp;</span><i class="bi bi-box-arrow-right"></i></a>
                 </div>
