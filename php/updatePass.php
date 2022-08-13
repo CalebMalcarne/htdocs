@@ -1,23 +1,27 @@
 <?php 
 //session_start();
 include "dbCon.php";
+session_start();
 
-$error =  $_GET['err'];
-$sub =  $_GET['sub'];
-
+//$error =  $_GET['err'];
+//$sub =  $_GET['sub'];
+$user = $_SESSION['user'];
 
 if (isset($_POST["old_password"])) {
 
-    $user = $_SESSION["user"];
+    //$user = $_SESSION["user"];
     $old_pass = mysqli_real_escape_string($mysqli, $_POST["old_password"]);
     $new_pass = mysqli_real_escape_string($mysqli, $_POST["new_password"]);
     $re_pass = mysqli_real_escape_string($mysqli, $_POST["re_password"]);
 
-    $password = hash('sha256', $old_pass);
+    //$password = hash('sha256', $old_pass);
+    echo($user);
+    echo($old_pass);
+    echo($new_pass);
+    echo($re_pass);
 
-    $sql = "SELECT * FROM login WHERE user = '$user' AND pass = '".$old_pass."' limit 1";
+    $sql = "SELECT * FROM login WHERE user = '$user' AND pass = '$old_pass' limit 1";
     $result = $mysqli->query($sql);  
-    $pass_opt = 'zonePass';   
 
 
     //password validity checking

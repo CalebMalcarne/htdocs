@@ -6,7 +6,13 @@ if($_SESSION['user'] == 'admin'){
 } else {
     include '../Headers/general_header.php';
 }
-include '../php/updatePass.php'
+include '../php/updatePass.php';
+$user = $_SESSION['user'];
+
+//$User = unserialize($_SESSION['user_']);
+//echo($User -> getUsername());
+$error = $_GET['err'];
+$sub = $_GET['sub'];
 ?>
 
      <!-- Content -->
@@ -21,7 +27,7 @@ include '../php/updatePass.php'
                         <div class="card-body mt-2 mx-3">
                             <h2 class="text-center">Change Password</h2>
 
-                            <form method="POST" action = "../php/updatePass.php" onsubmit="return confirm('Are you sure you want to change the password?');">
+                            <form method="POST" action = "../php/updatePass.php?>" onsubmit="return confirm('Are you sure you want to change the password?');">
          
                                 <div class="mb-4">
                                     <label for="password" class="form-label">Old Password</label>
